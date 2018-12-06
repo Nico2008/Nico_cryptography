@@ -25,6 +25,9 @@ def decode(msg, off):
     return output_message
 
 def outcomes(msg):
-	pass
+    for offset in range(0, 27):
+        print(decode(msg, offset))
 
-
+if __name__ == "__main__":
+    encoded = encode("nico is a goofball", 6);
+    outcomes(encoded)
